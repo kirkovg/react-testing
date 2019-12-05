@@ -19,6 +19,13 @@ describe('CommentList', () => {
   });
 
   it('should create one li per comment', () => {
-    console.log(wrapped.find('li').length);
+    // given & when & then
+    expect(wrapped.find('li').length).toEqual(2);
+  });
+
+  it('should show the text for each comment', () => {
+    // given & when & then
+    expect(wrapped.render().text()).toContain('comment1');
+    expect(wrapped.render().text()).toContain('comment2');
   });
 });
