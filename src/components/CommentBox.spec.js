@@ -19,7 +19,7 @@ describe('CommentBox', () => {
   it('should have a text area and a button', () => {
     // given & when & then
     expect(wrapped.find('textarea').length).toEqual(1);
-    expect(wrapped.find('button').length).toEqual(1);
+    expect(wrapped.find('button').length).toEqual(2);
   });
 
   it('should have an editable text area', () => {
